@@ -197,7 +197,7 @@ public class TicketReservation {
 
     //if no seats are available prompt the user to try different selection
     if(seatsAvailable>0){
-      System.out.println("\nSeats available for Venue Level " + venueLevel + " :" + seatsAvailable);
+      System.out.println("\nSeats available for selected Venue Level :" + seatsAvailable);
       validateTicketCountAndProceed();
     }
     else{
