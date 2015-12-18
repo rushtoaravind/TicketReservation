@@ -5,4 +5,10 @@ Steps to download the application and running in your local PC(MAC instrutions)
 3. Initialize the git repository using "git init"
 4. Get the code from repository using "git pull https://github.com/rushtoaravind/TicketReservation.git"
 5. Install jdk if not installed. Type java in the terminal and it will prompt if the java is not installed.
-6. 
+
+Installing maven:
+1. ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+2. brew install maven
+
+Installing mysql:
+1.  Login to https://dev.mysql.com/downloads/mysql/
