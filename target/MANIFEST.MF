@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Class-Path: /lib/spring-core-3.2.2.RELEASE.jar /lib/commons-logging-1.
+ 1.1.jar /lib/spring-context-3.2.2.RELEASE.jar /lib/spring-aop-3.2.2.R
+ ELEASE.jar /lib/spring-expression-3.2.2.RELEASE.jar /lib/spring-orm-3
+ .2.2.RELEASE.jar /lib/aopalliance-1.0.jar /lib/spring-jdbc-3.2.2.RELE
+ ASE.jar /lib/spring-tx-3.2.2.RELEASE.jar /lib/mockito-all-1.10.19.jar
+  /lib/spring-test-3.2.2.RELEASE.jar /lib/spring-beans-3.2.2.RELEASE.j
+ ar /lib/hibernate-core-4.1.9.Final.jar /lib/antlr-2.7.7.jar /lib/jbos
+ s-logging-3.1.0.GA.jar /lib/javassist-3.17.1-GA.jar /lib/jboss-transa
+ ction-api_1.1_spec-1.0.0.Final.jar /lib/dom4j-1.6.1.jar /lib/hibernat
+ e-jpa-2.0-api-1.0.1.Final.jar /lib/hibernate-commons-annotations-4.0.
+ 1.Final.jar /lib/mysql-connector-java-5.1.22.jar /lib/javax.inject-1.
+ jar
+Build-Jdk: 1.6.0_65
+Built-By: a1096282
+Created-By: IntelliJ IDEA
+Main-Class: com.company.ticketreservation.controller.TicketReservation
+
