@@ -15,7 +15,7 @@ Installing maven:
 Installing mysql:
 1.  Download mysql from http://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.10-osx10.10-x86_64.dmg. Note down the password after the succesful install.
 2.  Download mysql workbench from http://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community-6.3.6-osx-x86_64.dmg
-3.  Go to /usr/local/mysql and change the permission to mysql using sudo chown -R data. You can also change the permission of other folders as well.
+3.  Go to /usr/local/mysql and change the permission of data folder to mysql using sudo chown -R data. You can also change the permission of other folders as well.
 4.  Open the Mysql prefernce pane and Click on start SQL.
 5.  Open the MySQL community workbench. Login with the password which we got during initial install.
 6.  When you try to open/test connection it will prompt to change the password. Make sure you have the userid/pwd as root:root.
