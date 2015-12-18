@@ -1,6 +1,6 @@
 # TicketReservation
 
-Steps to download the application and running in your local PC (MAC instrutions)
+Steps to download the application and running in your local PC (MAC instructions)
 
 1. Try to run git from the Terminal the very first time. If you don't have it installed already, it will prompt you to install it. Install it from the App store.
 2. Create a folder named TicketReservation in your local.
