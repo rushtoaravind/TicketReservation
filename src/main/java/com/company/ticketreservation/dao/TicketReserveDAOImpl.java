@@ -4,18 +4,21 @@ import com.company.ticketreservation.model.AuditoriumMaster;
 import com.company.ticketreservation.model.DataConfig;
 import com.company.ticketreservation.model.SeatRepository;
 import com.company.ticketreservation.model.UserReservation;
-
-import org.hibernate.*;
-import org.hibernate.criterion.Projection;
+import org.hibernate.Criteria;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.transform.Transformers;
-import org.hibernate.tuple.Dom4jInstantiator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * This class acts a data persistent layer for the Ticker reservation system.
@@ -58,7 +61,6 @@ public class TicketReserveDAOImpl implements TicketReserveDAO {
   public void insertSeatDetails(){
 
     Session session = sessionFactory.getCurrentSession();
-    //Transaction transaction=session.beginTransaction();
 
     List<AuditoriumMaster> auditoriumList=getAuditoriumDetails();
     for(AuditoriumMaster auditoriumMaster:auditoriumList){
@@ -68,7 +70,7 @@ public class TicketReserveDAOImpl implements TicketReserveDAO {
         SeatRepository seatRepository=new SeatRepository();
         seatRepository.setTierId(tierId);
         seatRepository.setSeatId(rowCount);
-        seatRepository.setSeatAvailable("N");
+        seatRepository.setSeatAvailable("Y");
         seatRepository.setCreatedTimeStamp(new Date());
         seatRepository.setUpdatedTimeStamp(new Date());
         session.save(seatRepository);
@@ -83,8 +85,6 @@ public class TicketReserveDAOImpl implements TicketReserveDAO {
         }
       }
     }
-    //transaction.commit();
-
   }
 
   /**

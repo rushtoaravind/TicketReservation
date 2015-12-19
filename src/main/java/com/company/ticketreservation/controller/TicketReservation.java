@@ -10,13 +10,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.BufferOverflowException;
-import java.nio.CharBuffer;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  * This class is a ticket reservation system for the auditorium
@@ -113,7 +111,7 @@ public class TicketReservation {
     System.out.println ("\n----------------------------------------");
     System.out.println ("Ticket Reservation - Auditorium Details");
     System.out.println ("----------------------------------------");
-    System.out.printf("%-20s%-20s%%n", "Venue Name", "Fees");
+    System.out.printf("%-20s%-20s%n", "Venue Name", "Fees");
 
     //iterate through the auditorium details from DB and list it to user
     //Form maps to add the cost of each venue and the name of each venue for display purpose when booking the tickets.
