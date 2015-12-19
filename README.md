@@ -56,10 +56,10 @@ APPLICATION ASSUMPTIONS:
 5. User need not provide any inputs while starting the application and will be asked for inputs later.
 6. Payment confirmation is not displayed or asked from the user assuming them as out of scope.
 7. Email will not be triggered to the user after booking.
-8. A user can book a max of 5(db configured) tickets based on value in DB. The same email can be used to book the tickets again.
-9. After time out application will start from the beginning.
-10.Need to start the application if it needs to reflect the changes for any data base configured value.
+8. A user can book a max of 5(db configured) tickets based on value in DB. The same email can be used by the user to book the tickets again.
+9. Need to start the application if it needs to reflect the changes for any data base configured value.
 10. Junit test cases available to validate the user input. No Integration test cases are available.
+11. No Foreign/composite keys have been implemented considering the simplicity of the application.
 
 Technology/tool Stack:
 ----------------------
@@ -70,3 +70,9 @@ Technology/tool Stack:
 5. Junit/Mockito
 6. Maven
 
+Data Base Tables:
+------------------
+AUDITORIUM_MASTER - Master table to store the auditorium details
+DATA_CONFIG - Master table for Data configurable values
+SEAT_RESERVATION_REPOSITORY - Repository for storing the seat details of the auditorium along with the reservation id of the user.
+USER_RESERVATION - Contains the User related information.
