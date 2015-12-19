@@ -4,7 +4,7 @@ import com.company.ticketreservation.model.AuditoriumMaster;
 import com.company.ticketreservation.model.DataConfig;
 import com.company.ticketreservation.model.SeatRepository;
 import com.company.ticketreservation.model.UserReservation;
-import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+
 import org.hibernate.*;
 import org.hibernate.criterion.Projection;
 import org.hibernate.criterion.Projections;
