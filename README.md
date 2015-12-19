@@ -59,7 +59,6 @@ APPLICATION ASSUMPTIONS:
 8. A user can book a max of 5(db configured) tickets based on value in DB. The same email can be used by the user to book the tickets again.
 9. Need to start the application if it needs to reflect the changes for any data base configured value.
 10. Junit test cases available to validate the user input. No Integration test cases are available.
-11. No Foreign/composite keys have been implemented considering the simplicity of the application.
 
 Technology/tool Stack:
 ----------------------
