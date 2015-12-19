@@ -69,6 +69,8 @@ public class TicketReserveDAOImpl implements TicketReserveDAO {
         seatRepository.setTierId(tierId);
         seatRepository.setSeatId(rowCount);
         seatRepository.setSeatAvailable("N");
+        seatRepository.setCreatedTimeStamp(new Date());
+        seatRepository.setUpdatedTimeStamp(new Date());
         session.save(seatRepository);
         if (rowCount%50 == 0)
         {
